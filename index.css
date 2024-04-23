@@ -1,0 +1,776 @@
+body{
+    overflow: hidden;
+}
+
+.back{
+    margin: -10px;
+    background-image: url(back.jpg);
+    height: 105%;
+    width: 500px;
+    background-size: 2000px;
+    z-index: 4;
+    position: absolute;
+    left: -164px;
+    background-position: -1500px -200px;
+}
+
+.back2{
+    margin: -10px;
+    background-image: url(back.jpg);
+    height: 105%;
+    width: 500px;
+    background-size: 2000px;
+    z-index: 4;
+    position: absolute;
+    left: 1239px;
+    background-position: 0px -200px;
+}
+
+.sky{
+    position: absolute;
+    height: 720px;
+    width: 890px;
+    background-color: skyblue;
+    left: 330px;
+    top: 0px;
+}
+
+
+@-webkit-keyframes animateCloud {
+    0% {
+      margin-left: -600px;
+    }
+    100% {
+      margin-left: 100%;
+    }
+  }
+  
+  @-moz-keyframes animateCloud {
+    0% {
+      margin-left: -600px;
+    }
+    100% {
+      margin-left: 100%;
+    }
+  }
+  
+  @keyframes animateCloud {
+    0% {
+      margin-left: -600px;
+    }
+    100% {
+      margin-left: 100%;
+    }
+  }
+  
+  /* ANIMATIONS */
+  
+  .x1 {
+    -webkit-animation: animateCloud 35s linear infinite;
+    -moz-animation: animateCloud 35s linear infinite;
+    animation: animateCloud 35s linear infinite;
+    animation-delay: 2s;
+    -webkit-transform: scale(0.65);
+    -moz-transform: scale(0.65);
+    transform: scale(0.65);
+  }
+  
+  .x2 {
+    -webkit-animation: animateCloud 20s linear infinite;
+    -moz-animation: animateCloud 20s linear infinite;
+    animation: animateCloud 20s linear infinite;
+  
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    transform: scale(0.3);
+  }
+  
+  .x3 {
+    -webkit-animation: animateCloud 30s linear infinite;
+    -moz-animation: animateCloud 30s linear infinite;
+    animation: animateCloud 30s linear infinite;
+  
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    transform: scale(0.5);
+    animation-delay: 2s;
+  }
+  
+  .x4 {
+    -webkit-animation: animateCloud 18s linear infinite;
+    -moz-animation: animateCloud 18s linear infinite;
+    animation: animateCloud 18s linear infinite;
+  
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    transform: scale(0.4);
+  }
+  
+  .x5 {
+    -webkit-animation: animateCloud 25s linear infinite;
+    -moz-animation: animateCloud 25s linear infinite;
+    animation: animateCloud 25s linear infinite;
+  
+    -webkit-transform: scale(0.55);
+    -moz-transform: scale(0.55);
+    transform: scale(0.55);
+    animation-delay: 2s;
+  }
+  
+  /* OBJECTS */
+  
+  .cloud {
+    background: #fff;
+    background: -moz-linear-gradient(top, #fff 5%, #f1f1f1 100%);
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(5%, #fff),
+      color-stop(100%, #f1f1f1)
+    );
+    background: -webkit-linear-gradient(top, #fff 5%, #f1f1f1 100%);
+    background: -o-linear-gradient(top, #fff 5%, #f1f1f1 100%);
+    background: -ms-linear-gradient(top, #fff 5%, #f1f1f1 100%);
+    background: linear-gradient(top, #fff 5%, #f1f1f1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#f1f1f1',GradientType=0 );
+  
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+  
+    -webkit-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+  
+    height: 120px;
+    position: relative;
+    width: 350px;
+  }
+  
+  .cloud:after,
+  .cloud:before {
+    background: #fff;
+    content: "";
+    position: absolute;
+    z-index: 0;
+  }
+  
+  .cloud:after {
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+  
+    height: 100px;
+    left: 50px;
+    top: -50px;
+    width: 100px;
+  }
+  
+  .cloud:before {
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    border-radius: 200px;
+  
+    width: 180px;
+    height: 180px;
+    right: 50px;
+    top: -90px;
+  }
+
+
+.main-pigeon-container{
+    height: 500px;
+    width: 500px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    position: absolute;
+    left: 540px;
+    top: 230px;
+    visibility: hidden;
+}
+
+.main-pigeon-anime{
+    animation: main-visible .4s linear forwards;
+    animation-delay: 7s;
+}
+
+@keyframes main-visible {
+    100%{visibility: visible;}
+}
+
+.second-env{
+    top: 170px !important;
+    left: 180px !important;
+    transform: rotateY(0deg) skewY(15deg);
+    scale: .5 !important;
+}
+
+.p-head{
+    height: 150px;
+    width: 100px;
+    border: 2px solid rgba(0, 0, 0, 0.337);
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    position: absolute;
+    top: 130px;
+    left: 285px;
+    background-color: darkgray;
+}
+
+.p-eye{
+    height: 15px;
+    width: 15px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position:absolute;
+    top: 30px;
+    left: 50px;
+    background-color: black;
+}
+
+.p-eye-pupil{
+    position: absolute;
+    height: 7.5px;
+    width: 7.5px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.p-eye-pupil-2{
+    position: absolute;
+    height: 3.75px;
+    width: 3.75px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 50%;
+    left: 7px;
+    top: 7px;
+}
+
+.peak{
+    position: absolute;
+    top: 65px;
+    left: 85px;
+}
+
+.peak-top{
+    width: 30px;
+    border-top: 10px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 40px solid rgb(255, 211, 101);
+}
+
+.peak-bottom{
+    width: 30px;
+    border-top: 0px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 30px solid rgb(255, 166, 0);
+}
+
+.body-container{
+    position: absolute;
+    top: 0px;
+    left: -265px;
+}
+
+.p-body{
+            width:180px; 
+            height:180px; 
+            left:350px; 
+            border-radius:50%; 
+            position:absolute; 
+            color:rgb(92, 92, 109); 
+            box-shadow: 
+            150px 240px 0 0 currentColor
+}
+
+.p-body::before{
+    content:""; 
+    position:absolute; 
+    left:30px; 
+    top:120px; 
+    width:210px; 
+    height:120px; 
+    border-bottom:solid 180px currentColor; 
+    border-radius:0 0 0 100%; 
+    transform:rotate(-40deg); 
+    transform-origin:right 210px;
+}
+
+.left-wing{
+    scale: 0.8;
+    position: absolute;
+    left: -150px;
+    top: 80px;
+}
+
+.right-wing{
+    scale: 0.8;
+    position: absolute;
+    left: -150px;
+    top: 80px;
+    z-index: -3;
+}
+
+.p-wing{
+    width:150px; 
+    height:150px; 
+    left:350px; 
+    border-radius:50%; 
+    position:absolute; 
+    color:rgb(108, 108, 134); 
+    box-shadow: 
+    113px 214.5px 0 0 currentColor
+}
+
+.p-wing::before{
+    content:""; 
+    position:absolute; 
+    left:30px; 
+    top:120px; 
+    width:180px; 
+    height:90px; 
+    border-bottom:solid 150px currentColor; 
+    border-radius:0 0 0 100%; 
+    transform:rotate(-40deg); 
+    transform-origin:right 210px;
+}
+
+.p-leg{
+    height: 50px;
+    width: 1.4px;
+    background-color: rgb(213, 152, 11);
+    position: absolute;
+    rotate: -45deg;
+    top: -24.3px;
+}
+
+.pow{
+    height: 26px;
+    width: 26px;
+    border-top: 2px solid rgb(213, 152, 11);
+    border-left: 2px  solid rgb(213, 152, 11);
+    position: absolute;
+}
+
+.left-leg{
+    position: absolute;
+    top: 450px;
+    left: 300px;
+    rotate: 10deg;
+}
+
+.right-leg{
+    position: absolute;
+    top: 448px;
+    left: 320px;
+    rotate: 10deg;
+    z-index: 0;
+}
+
+.window-con-left{
+    height: 680px;
+    width: 760px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    position: absolute;
+    transition: 0.4s ease-in;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.window-con-left-anime{
+    animation: left-open 1s forwards;
+}
+
+.window-con-right{
+    height: 680px; 
+    width: 760px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    position: absolute;
+    left: 771px;
+}
+
+.window-con-right-anime{
+    animation: right-open 1s forwards;
+}
+
+@keyframes left-open {
+    100%{transform: skewY(10deg) rotateY(65deg);}
+}
+
+@keyframes right-open {
+    100%{transform: skewY(-10deg) rotateY(-65deg);}
+}
+
+.window-con-right .window-frame{
+    left: 0px;
+}
+
+.window-con-right .window-shine{
+    left: 19px;
+    top: 18px;
+}
+
+.window-frame{
+    position: absolute;
+    left:330px;
+    height: 640px;
+    width: 400px;
+    border: 20px solid rgba(0, 0, 0, 0);
+    border-image: radial-gradient(rgb(177, 177, 177),rgb(215, 215, 215),rgb(147, 147, 147));
+    border-image-slice: 1;
+}
+
+.window-shine{
+    height: 640px;
+    width: 399px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    position: absolute;
+    left: 350px;
+    top: 19px;
+    overflow: hidden;
+}
+
+.s{
+    background-image: linear-gradient(to right,rgb(255, 255, 255),rgb(230, 230, 230),rgba(223, 223, 223, 0.553));
+    height: 800px;
+    width: 20px;
+    rotate: -10deg;
+    position: absolute;
+    top: -60px;
+    left: 300px;
+}
+
+.s1{
+    left: 30px;
+}
+
+.s2{
+    left: 56px;
+    width: 10px;
+}
+
+.s3{
+    left: 280px;
+}
+
+.s4{
+    left: 307px;
+    width: 10px;
+}
+
+.left-curtain{
+    position: absolute;
+    background-image: url(curtains.png);
+    height: 1000px;
+    width: 400px;
+    background-position:-210px -5px;
+    background-size: 730px;
+    background-repeat: no-repeat;
+    z-index: 2;
+    top: 0px;
+    left: 215px;
+    transform: rotateY(180deg);
+}
+
+.right-curtain{
+    position: absolute;
+    background-image: url(curtains.png);
+    height: 1000px;
+    width: 400px;
+    background-position:-210px -5px;
+    background-size: 730px;
+    background-repeat: no-repeat;
+    z-index: 2;
+    top: 0px;
+    left: 940px;
+}
+
+.proxy-pigeon-container{
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    left: 550px;
+    top: 330px;
+    z-index: 3;
+    visibility: hidden;
+}
+
+.proxy-pigeon-anime{
+    animation: proxy-fly 5s forwards linear;
+    animation-delay: 2s;
+}
+
+@keyframes proxy-fly {
+    0%{top:0px;
+       scale: 0.1;
+    visibility: visible;}
+    20%{top: 80px;} 
+    25%{top: 68px;}
+    40%{top: 60px;}
+    45%{top: 48px;}
+    60%{top: 80px;}
+    65%{top: 68px;}
+    80%{top: 100px;}
+    85%{top: 88px;}   
+    100%{top:440px;
+        display: none;
+    left: 600px;}
+}
+
+.proxy-pigeon-container .head{
+    height: 100px;
+    width: 50px;
+    background-color: gray;
+    position: absolute;
+    left:155px;
+    top: 20px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+}
+
+.proxy-pigeon-container .body{
+    position: absolute;
+    left: 370px;
+    top: 70px;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-top: 235px solid gray;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.proxy-pigeon-container .tail{
+    position: absolute;
+    left: 410px;
+    top: 250px;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 65px solid gray;
+}
+
+.proxy-pigeon-container .left-wing{
+    position: absolute;
+    top: -70px;
+    left: 10px;
+    scale: 0.7;
+}
+
+.proxy-pigeon-container .left-wing .p-wing::before{
+    animation: prox-left-wing 1s linear infinite;
+}
+
+@keyframes prox-left-wing {
+    0%{rotate: 0deg;
+    left: 50px;
+    top: 100px;}
+    50%{rotate: -40deg;
+        left: 50px;
+        top: 100px;}
+    100%{rotate: 0deg;
+        left: 50px;
+        top: 100px;}
+}
+
+.proxy-pigeon-container .right-wing .p-wing::before{
+    animation: prox-left-wing 1s linear infinite;
+}
+
+.proxy-pigeon-container .right-wing{
+    position: absolute;
+    transform: rotateY(180deg);
+    top: -70px;
+    left: 900px;
+    scale: 0.7;
+}
+
+.proxy-pigeon-container .p-eye{
+    top: 13px;
+    left: 23px;
+    scale: .5;
+}
+
+.proxy-pigeon-container .second-eye{
+    left: 8px;
+}
+
+.proxy-pigeon-container .peak{
+    rotate: 90deg;
+    left: -10px;
+    z-index: 3;
+}
+
+.envelop {
+    width: 15rem;
+    height: 10rem;
+    position: absolute;
+    left: -20px;
+    right: 0;
+    margin: auto;
+    scale: 0.2;
+    cursor: pointer;
+    z-index: 1;
+  }
+  @media (min-width: 400px) and (max-width: 600px) {
+    .envelop {
+      width: 20rem;
+      height: 15rem;
+    }
+  }
+  @media (min-width: 600px) {
+    .envelop {
+      width: 25rem;
+      height: 20rem;
+    }
+  }
+  @media (min-width: 600px) and (min-height: 600px) {
+    .envelop {
+      bottom: 20%;
+    }
+  }
+  .envelop__front-paper {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 0.7rem;
+    border: 0.35rem solid #967b5c;
+    background-color: #ba9872;
+    clip-path: polygon(100% 0%, 50% 70%, 0% 0%, 0% 100%, 100% 100%);
+    z-index: 300;
+  }
+  .envelop__back-paper {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 0.7rem;
+    background-color: #967b5c;
+    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 90%);
+    z-index: 100;
+  }
+  .envelop__up-paper {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    position: relative;
+    border-radius: 0.7rem;
+    background-color: #967b5c;
+    z-index: 400;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 81%);
+  }
+  .envelop__sticker {
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    margin: auto;
+    top: 30%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 400;
+    background-image: url("https://www.freepnglogos.com/uploads/heart-png/emoji-heart-33.png");
+    background-color: #f9f9f9;
+    border: 0.3rem solid #e2e2e2;
+    background-size: 2rem;
+    background-position: center;
+  }
+  @media (max-width: 400px) {
+    .envelop__sticker {
+      background-size: 1.2rem;
+    }
+  }
+  @media (min-width: 600px) {
+    .envelop__sticker {
+      height: 15%;
+    }
+  }
+  .envelop__false-sticker {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    margin: auto;
+    top: 30%;
+    left: 80%;
+    bottom: 0;
+    right: 0;
+    z-index: 300;
+    background-image: url("https://www.freepnglogos.com/uploads/heart-png/emoji-heart-33.png");
+    background-color: #f9f9f9;
+    border: 0.3rem solid #e2e2e2;
+    background-size: 2rem;
+    background-position: center;
+  }
+  @media (max-width: 400px) {
+    .envelop__false-sticker {
+      background-size: 1.2rem;
+    }
+  }
+  @media (min-width: 600px) {
+    .envelop__false-sticker {
+      height: 15%;
+    }
+  }
+  .envelop__content {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: 200;
+  }
+  
+  .love-notes {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .note {
+    width: 95%;
+    height: 30%;
+    background-color: #f9f9f9;
+    position: absolute;
+    overflow: hidden;
+    transition: height 0.5s, opacity 0.25s;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+  .note:nth-child(1) {
+    bottom: 60%;
+  }
+  .note:nth-child(2) {
+    bottom: 40%;
+  }
+  .note:nth-child(3) {
+    bottom: 20%;
+  }
+  .note:hover {
+    cursor: pointer;
+    height: 45%;
+  }
+  .note__text {
+    font-family: "Sofia";
+    padding: 1rem;
+  }
+  .note__text p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  @media (min-width: 300px) and (max-width: 600px) {
+    .note__text p {
+      font-size: 1.025rem;
+    }
+  }
+  @media (min-width: 600px) {
+    .note__text p {
+      font-size: 1.15rem;
+    }
+  }

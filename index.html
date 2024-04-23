@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="back"></div>
+    <div class="back2"></div>
+    <div class="sky">
+
+        <div class="x1">
+            <div class="cloud"></div>
+        </div>
+    
+        <div class="x2">
+            <div class="cloud"></div>
+        </div>
+    
+        <div class="x3">
+            <div class="cloud"></div>
+        </div>
+    
+        <div class="x4">
+            <div class="cloud"></div>
+        </div>
+    
+        <div class="x5">
+            <div class="cloud"></div>
+        </div>
+
+    </div>
+    <div class="left-curtain"></div>
+    <div class="right-curtain"></div>
+    <div class="proxy-pigeon-container" id="proxy-pigeon">
+        <div class="envelop">
+            <div class="envelop__front-paper"></div>
+            <div class="envelop__back-paper"></div>
+            <div class="envelop__up-paper js-up-paper"></div>
+            <div class="envelop__sticker js-sticker"></div>
+            <div class="envelop__false-sticker"></div>
+            <div class="envelop__content js-envelop-content">
+              <div class="love-notes">
+                <div class="note js-note">
+                  <div class="note__text">
+                    <p>
+                      Oi amor, queria te agradecer por todos nossos momentos...
+                    </p>
+                  </div>
+                </div>
+                <div class="note js-note">
+                  <div class="note__text">
+                    <p>quero que eles nunca acabem e que tenham sempre muitos outros pela frente.</p>
+                  </div>
+                </div>
+                <div class="note js-note">
+                  <div class="note__text">
+                    <p>você é a melhor coisa que me aconteceu, obrigado por me escolher todos os dias.</p>
+                    <p>Te amo muito! &hearts;.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="head">
+            <div class="p-eye">
+                <div class="p-eye-pupil"></div>
+                <div class="p-eye-pupil-2"></div>
+            </div>
+            <div class="p-eye second-eye">
+                <div class="p-eye-pupil"></div>
+                <div class="p-eye-pupil-2"></div>
+            </div>
+            <div class="peak">
+                <div class="peak-top"></div>
+                <div class="peak-bottom"></div>
+            </div>
+        </div>
+        <div class="body-container">
+            <div class="body"></div>
+            <div class="left-wing">
+                <div class="p-wing"></div>
+            </div>
+            <div class="right-wing">
+                <div class="p-wing"></div>
+            </div>
+            <div class="tail"></div>
+        </div>
+    </div>
+    <div class="main-pigeon-container" id="main-pigeon">
+
+
+        <a href="letter.html"><div class="envelop second-env">
+            <div class="envelop__front-paper"></div>
+            <div class="envelop__back-paper"></div>
+            <div class="envelop__up-paper js-up-paper"></div>
+            <div class="envelop__sticker js-sticker"></div>
+            <div class="envelop__false-sticker"></div>
+            <div class="envelop__content js-envelop-content">
+              <div class="love-notes">
+                <div class="note js-note">
+                  <div class="note__text">
+                    <p>
+                      Oi amor, queria te agradecer por todos nossos momentos...
+                    </p>
+                  </div>
+                </div>
+                <div class="note js-note">
+                  <div class="note__text">
+                    <p>quero que eles nunca acabem e que tenham sempre muitos outros pela frente.</p>
+                  </div>
+                </div>
+                <div class="note js-note">
+                  <div class="note__text">
+                    <p>você é a melhor coisa que me aconteceu, obrigado por me escolher todos os dias.</p>
+                    <p>Te amo muito! &hearts;.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div></a>
+
+
+        <div class="p-head">
+            <div class="p-eye">
+                <div class="p-eye-pupil"></div>
+                <div class="p-eye-pupil-2"></div>
+            </div>
+            <div class="peak">
+                <div class="peak-top"></div>
+                <div class="peak-bottom"></div>
+            </div>
+        </div>
+        <div class="body-container">
+            <div class="p-body"></div>
+        </div>
+        <div class="left-wing">
+            <div class="p-wing"></div>
+        </div>
+        <div class="right-wing">
+            <div class="p-wing"></div>
+        </div>
+        <div class="left-leg">
+            <div class="p-leg"></div>
+            <div class="pow"></div>
+        </div>
+        <div class="right-leg">
+            <div class="p-leg"></div>
+            <div class="pow"></div>
+        </div>
+
+    </div>
+
+    <div class="window-con-left" id="window-con-left"  onmousedown="addanime()">
+        <div class="window-frame" id="window-frame" onmousedown="addanime()"></div>
+        <div class="window-shine" onmousedown="addanime()">
+            <div class="s1 s"></div>
+            <div class="s2 s"></div>
+            <div class="s3 s"></div>
+            <div class="s4 s"></div>
+        </div>
+    </div>
+    <div class="window-con-right" id="window-con-right"  onmousedown="addanime()">
+        <div class="window-frame" id="window-frame" onmousedown="addanime()"></div>
+        <div class="window-shine"  onmousedown="addanime()">
+            <div class="s1 s"></div>
+            <div class="s2 s"></div>
+            <div class="s3 s"></div>
+            <div class="s4 s"></div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+
+
+    function addanime(){
+        document.getElementById("window-con-left").classList.add("window-con-left-anime")
+        document.getElementById("window-con-right").classList.add("window-con-right-anime")
+        document.getElementById("main-pigeon").classList.add("main-pigeon-anime")
+        document.getElementById("proxy-pigeon").classList.add("proxy-pigeon-anime")
+    }
+
+</script>
+
+</html>
